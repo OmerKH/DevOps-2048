@@ -1,3 +1,5 @@
+
+# Production 
 FROM nginx:alpine
 
 COPY . /usr/share/nginx/html
