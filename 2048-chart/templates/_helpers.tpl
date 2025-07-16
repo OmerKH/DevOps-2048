@@ -34,12 +34,12 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{- define "2048-chart.labels" -}}
-helm.sh/chart: {{ include "2048-chart.chart" . | quote }}
+helm.sh/chart: {{ include "2048-chart.chart" . }}
 {{ include "2048-chart.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
-app.kubernetes.io/managed-by: {{ .Release.Service | quote }}
+app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
 
 {{/*
