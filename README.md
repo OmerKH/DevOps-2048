@@ -1,7 +1,7 @@
 DevOps-2048 🎮⚙️
 
 
-A comprehensive DevOps tutorial project that demonstrates modern deployment practices using the classic 2048 game. This project covers everything from local development to production deployment using Docker, Kubernetes, and various cloud platforms.
+A DevOps project that demonstrates deployment using the classic 2048 game. This project covers everything from local development to production deployment using Docker, Kubernetes, and various cloud platforms.
 🎯 Project Overview
 This project serves as a hands-on learning experience for DevOps practices, including:
 
@@ -10,7 +10,6 @@ Local Kubernetes deployment with Minikube
 Cloud deployment strategies
 CI/CD pipeline implementation
 Infrastructure as Code
-Monitoring and logging
 
 🚀 Features
 
