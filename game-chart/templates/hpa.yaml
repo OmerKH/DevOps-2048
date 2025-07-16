@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "2048-chart.fullname" . }}
+  name: {{ include "game-chart.fullname" . }}
   labels:
-    {{- include "2048-chart.labels" . | nindent 4 }}
+    {{- include "game-chart.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "2048-chart.fullname" . }}
+    name: {{ include "game-chart.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
